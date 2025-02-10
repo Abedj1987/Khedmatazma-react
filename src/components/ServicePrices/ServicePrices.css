@@ -1,0 +1,138 @@
+.service-prices {
+    padding: 4rem 1rem;
+    background-color: #ffffff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .head-item {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1e293b;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .sub-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #475569;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .desc {
+    font-size: 1rem;
+    color: #64748b;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    line-height: 1.6;
+  }
+  
+  .subservices {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .subservice .body {
+    display: block;
+    background: white;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .subservice .body:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bg-image {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+  }
+  
+  .details {
+    padding: 1rem;
+  }
+  
+  .subservice-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e293b;
+    margin-bottom: 0.75rem;
+  }
+  
+  .price {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .label {
+    font-size: 0.875rem;
+    color: #64748b;
+  }
+  
+  .amount {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2563eb;
+  }
+  
+  .footer-prices {
+    text-align: center;
+  }
+  
+  .footer-prices .mybtn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.875rem 2rem;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-prices .mybtn:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+  }
+  
+  @media (max-width: 1024px) {
+    .subservices {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service-prices {
+      padding: 3rem 1rem;
+    }
+  
+    .head-item {
+      font-size: 1.5rem;
+    }
+  
+    .sub-title {
+      font-size: 1.125rem;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .subservices {
+      grid-template-columns: 1fr;
+    }
+  }
